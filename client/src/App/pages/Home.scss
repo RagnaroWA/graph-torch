@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+$pp: Poppins, sans-serif;
+
+html {
+  margin-top: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Home {
+  background-color: white;
+  margin: 0;
+  height: 400vh;
+  width: 100%;
+  position: relative;
+
+  .container1 {
+    background-color: #fefefe;
+    height: 100vh;
+    width: 100%;
+
+    #title-1 {
+      position: absolute;
+      top: 11%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+
+      #title-main-1 {
+        font: 150% $pp;
+        font-weight: 400;
+        font-size: 3.5em;
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+        -o-animation: fadein 3s; /* Opera < 12.1 */
+        animation: fadein 3s;
+      }
+
+      #title-main-2 {
+        font: 50% $pp;
+        font-weight: 400;
+        font-size: 2em;
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+        -o-animation: fadein 3s; /* Opera < 12.1 */
+        animation: fadein 3s;
+      }
+
+      #hr {
+        width: 0;
+        animation: separator-width 1s ease-out forwards;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: black;
+        border: 1px solid;
+      }
+
+      @keyframes separator-width {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    }
+
+    #down1 {
+      background: url('../../assets/torch.png') no-repeat;
+      background-size: contain;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%,-50%);
+
+      -webkit-transition: all 200ms ease-out;
+      -ms-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+
+    #down1:hover {
+      background: url('../../assets/torch.png') no-repeat;
+      background-size: contain;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%,-50%);
+
+      -webkit-transition: all 200ms ease-out;
+      -ms-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+  }
+
+  .container2 {
+    background-color: #161616;
+    height: 100vh;
+    width: 100%;
+
+    #title-2 {
+      position: absolute;
+      top: 36%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+
+      #title-main-1 {
+        font: 150% $pp;
+        font-weight: 300;
+        font-size: 2.5em;
+        color: white;
+      }
+
+      #title-main-2 {
+        font: 50% $pp;
+        font-weight: 300;
+        font-size: 1.3em;
+        color: white;
+      }
+
+      #hr2 {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-color: white;
+        background-color: white;
+        color: white;
+        border: 1px solid;
+      }
+    }
+
+    #down2 {
+      background: url('../../assets/down-white.png') no-repeat;
+      background-size: contain;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%,-50%);
+
+      -webkit-transition: all 200ms ease-out;
+      -ms-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+
+    #down2:hover {
+      background: url('../../assets/down-white.png') no-repeat;
+      background-size: contain;
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%,-50%);
+
+      -webkit-transition: all 200ms ease-out;
+      -ms-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+  }
+
+  .container3 {
+    background-color: #fefefe;
+    height: 100vh;
+    width: 100%;
+
+    #title-3 {
+      position: absolute;
+      top: 61%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+
+      #title-main-1 {
+        font: 150% $pp;
+        font-weight: 300;
+        font-size: 2.5em;
+        color: black;
+      }
+
+      #hr3 {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-color: black;
+        background-color: black;
+        color: black;
+        border: 1px solid;
+      }
+    }
+
+    #homo {
+      background: url('../../assets/homo.png') no-repeat;
+      background-size: contain;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+    }
+
+
+    #down3 {
+      background: url('../../assets/down-black.png') no-repeat;
+      background-size: contain;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      left: 50%;
+      top: 70%;
+      transform: translate(-50%,-50%);
+
+      -webkit-transition: all 200ms ease-out;
+      -ms-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+
+    #down3:hover {
+      background: url('../../assets/down-black.png') no-repeat;
+      background-size: contain;
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      left: 50%;
+      top: 70%;
+      transform: translate(-50%,-50%);
+
+      -webkit-transition: all 200ms ease-out;
+      -ms-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+  }
+
+  .container4 {
+    background-color: #161616;
+    height: 100vh;
+    width: 100%;
+
+    #title-4 {
+      position: absolute;
+      top: 86%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+
+      #title-main-1 {
+        font: 150% $pp;
+        font-weight: 300;
+        font-size: 2.5em;
+        color: white;
+      }
+
+      #hr4 {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-color: white;
+        background-color: white;
+        color: white;
+        border: 1px solid;
+      }
+    }
+
+    #hete {
+      background: url('../../assets/hete.png') no-repeat;
+      background-size: contain;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+    }
+
+    #right {
+      background: url('../../assets/right-white.png') no-repeat;
+      background-size: contain;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      left: 50%;
+      top: 95%;
+      transform: translate(-50%,-50%);
+
+      -webkit-transition: all 200ms ease-out;
+      -ms-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+
+    #right:hover {
+      background: url('../../assets/right-white.png') no-repeat;
+      background-size: contain;
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      left: 50%;
+      top: 95%;
+      transform: translate(-50%,-50%);
+
+      -webkit-transition: all 200ms ease-out;
+      -ms-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+  }
+}

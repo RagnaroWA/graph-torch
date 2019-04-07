@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+$pp: Poppins, sans-serif;
+
+html {
+  margin-top: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.Home-about {
+  background-color: #fefefe;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: scroll;
+
+  #title-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+    @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    #title-main-1 {
+      font: 150% $pp;
+      font-weight: 300;
+      font-size: 3em;
+      color: black;
+      -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 3s; /* Firefox < 16 */
+      -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+      animation: fadein 3s;
+    }
+
+    #hr3 {
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      border-color: black;
+      background-color: black;
+      color: black;
+      border: 1px solid;
+      animation: separator-width 1s ease-out forwards;
+    }
+
+    @keyframes separator-width {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    #title-contact {
+      font: 150% $pp;
+      font-weight: 300;
+      font-size: 1.5em;
+      color: black;
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+      animation: fadein 2s;
+      margin-bottom: 5px;
+      a {
+        text-decoration: none;
+        color: black;
+
+      }
+    }
+  }
+}

@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "node-sass": "^4.11.0",
+    "victory": "^32.1.0"
   }
 }

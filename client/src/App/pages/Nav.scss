@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+$pp: Poppins, sans-serif;
+
+.navigation {
+  height: 60px;
+  width: 100%;
+  color: black;
+  background-color: black;
+  position: fixed;
+  top:0;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+
+  .home-link {
+    text-decoration: none;
+    position: absolute;
+    width: 50% !important;
+    height: 60px;
+
+    .home-button {
+      color: white;
+      position: absolute;
+      height: 60px;
+      color: white;
+
+      @media screen and (max-width: 480px) and (min-width: 0px) {
+        font-size: 0.8em;
+        width: 120px;
+        text-align: center;
+        height: auto;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 481px) {
+        font-size: 1.1em;
+        text-align: center;
+        width: 180px;
+        height: auto;
+      }
+      @media screen and (max-width: 2048px) and (min-width: 1024px) {
+        font-size: 1.5em;
+        width: 200px;
+        height: auto;
+        text-align: center;
+      }
+      @media screen and (max-width: 3840px) and (min-width: 2049px) {
+        font-size: 2em;
+        width: 300px;
+        height: auto;
+        text-align: center;
+      }
+      top: 50%;
+      transform: translate(0%, -50%);
+    }
+  }
+
+  .links {
+    position: relative;
+    width: 50% !important;
+    height: 60px;
+    background-color: black;
+    left: 50%;
+    display: table;
+
+    .homo-link {
+      text-decoration: none;
+      height: 100%;
+      text-align: center;
+      float: right;
+      color: white;
+      border: 5px solid black;
+      transition: 0.3s;
+
+      display: flex;
+      justify-content:center;
+      align-content:center;
+      flex-direction:column;
+
+      @media screen and (max-width: 480px) and (min-width: 0px) {
+        font-size: 0.7em;
+        width: 40px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 481px) {
+        font-size: 1.0em;
+        width: 80px;
+      }
+      @media screen and (max-width: 2048px) and (min-width: 1024px) {
+        font-size: 1.2em;
+        width: 100px;
+      }
+      @media screen and (max-width: 3840px) and (min-width: 2049px) {
+        font-size: 1.5em;
+        width: 150px;
+      }
+    }
+
+    .homo-link:hover {
+      text-decoration: none;
+      height: 100%;
+      text-align: center;
+      width: 100px;
+      float: right;
+      color: black;
+      background-color: white;
+      border: 5px solid black;
+
+      display: flex;
+      justify-content:center;
+      align-content:center;
+      flex-direction:column;
+
+      @media screen and (max-width: 480px) and (min-width: 0px) {
+        font-size: 0.7em;
+        width: 40px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 481px) {
+        font-size: 1.0em;
+        width: 80px;
+      }
+      @media screen and (max-width: 2048px) and (min-width: 1024px) {
+        font-size: 1.2em;
+        width: 100px;
+      }
+      @media screen and (max-width: 3840px) and (min-width: 2049px) {
+        font-size: 1.5em;
+        width: 150px;
+      }
+    }
+
+    .hete-link {
+      text-decoration: none;
+      height: 100%;
+      text-align: center;
+      width: 100px;
+      float: right;
+      color: white;
+      border: 5px solid black;
+      transition: 0.3s;
+
+      display: flex;
+      justify-content:center;
+      align-content:center;
+      flex-direction:column;
+
+      @media screen and (max-width: 480px) and (min-width: 0px) {
+        font-size: 0.7em;
+        width: 40px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 481px) {
+        font-size: 1.0em;
+        width: 80px;
+      }
+      @media screen and (max-width: 2048px) and (min-width: 1024px) {
+        font-size: 1.2em;
+        width: 100px;
+      }
+      @media screen and (max-width: 3840px) and (min-width: 2049px) {
+        font-size: 1.5em;
+        width: 150px;
+      }
+    }
+
+    .hete-link:hover {
+      text-decoration: none;
+      height: 100%;
+      text-align: center;
+      width: 100px;
+      float: right;
+      color: black;
+      background-color: white;
+      border: 5px solid black;
+
+      display: flex;
+      justify-content:center;
+      align-content:center;
+      flex-direction:column;
+
+      @media screen and (max-width: 480px) and (min-width: 0px) {
+        font-size: 0.7em;
+        width: 40px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 481px) {
+        font-size: 1.0em;
+        width: 80px;
+      }
+      @media screen and (max-width: 2048px) and (min-width: 1024px) {
+        font-size: 1.2em;
+        width: 100px;
+      }
+      @media screen and (max-width: 3840px) and (min-width: 2049px) {
+        font-size: 1.5em;
+        width: 150px;
+      }
+    }
+
+    .about-link {
+      text-decoration: none;
+      height: 100%;
+      text-align: center;
+      width: 100px;
+      float: right;
+      color: white;
+      margin-right: 15px;
+      border: 5px solid black;
+      transition: 0.3s;
+
+      display: flex;
+      justify-content:center;
+      align-content:center;
+      flex-direction:column;
+
+      @media screen and (max-width: 480px) and (min-width: 0px) {
+        font-size: 0.7em;
+        width: 40px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 481px) {
+        font-size: 0.9em;
+        width: 70px;
+      }
+      @media screen and (max-width: 2048px) and (min-width: 1024px) {
+        font-size: 1.2em;
+        width: 100px;
+      }
+      @media screen and (max-width: 3840px) and (min-width: 2049px) {
+        font-size: 1.5em;
+        width: 150px;
+      }
+    }
+
+    .about-link:hover {
+      text-decoration: none;
+      height: 100%;
+      text-align: center;
+      width: 100px;
+      float: right;
+      color: black;
+      background-color: white;
+      margin-right: 15px;
+      border: 5px solid black;
+
+      display: flex;
+      justify-content:center;
+      align-content:center;
+      flex-direction:column;
+
+      @media screen and (max-width: 480px) and (min-width: 0px) {
+        font-size: 0.7em;
+        width: 40px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 481px) {
+        font-size: 0.9em;
+        width: 70px;
+      }
+      @media screen and (max-width: 2048px) and (min-width: 1024px) {
+        font-size: 1.2em;
+        width: 100px;
+      }
+      @media screen and (max-width: 3840px) and (min-width: 2049px) {
+        font-size: 1.5em;
+        width: 150px;
+      }
+    }
+  }
+}

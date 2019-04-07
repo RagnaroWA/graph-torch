@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+$pp: Poppins, sans-serif;
+
+html {
+  margin-top: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.Home-hete {
+  background-color: #fefefe;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: scroll;
+
+  #title-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+    @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    #title-main-1 {
+      font: 150% $pp;
+      font-weight: 300;
+      font-size: 3em;
+      color: black;
+      -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 3s; /* Firefox < 16 */
+      -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+      animation: fadein 3s;
+    }
+
+    #hr3 {
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      border-color: black;
+      background-color: black;
+      color: black;
+      border: 1px solid;
+      animation: separator-width 1s ease-out forwards;
+    }
+
+    @keyframes separator-width {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  }
+
+  #hete {
+    background: url('../../assets/hete-black.png') no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .input-url-container {
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+    top: 70%;
+
+    .input-file {
+      height: auto;
+      width: auto;
+      position: absolute;
+      color: black;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      font: 150% $pp;
+      font-weight: 300;
+      font-size: 1.4em;
+    }
+
+    .input-url {
+      outline: none !important;
+      border: 2px solid black;
+
+      position: absolute;
+      left: 50%;
+      top: 32%;
+      width: 25%;
+      height: 35px;
+      font-size: 28px;
+      transform: translate(-50%, -50%);
+    }
+
+    .input-url:focus {
+      outline: none !important;
+      border: 2px solid black;
+
+      position: absolute;
+      left: 50%;
+      top: 32%;
+      width: 25%;
+      height: 35px;
+      font-size: 28px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .victory-bar {
+    top: 95%;
+    position: absolute !important;
+    height: 40vh;
+    width: 100%;
+  }
+}
