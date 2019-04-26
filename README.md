@@ -31,9 +31,7 @@
 
 ## PDF Analysis Report
 * The PDF analysis report can be downloaded after clicking the download button. Sample PDF is shown below.
-<object data="https://github.com/RagnaroWA/graphTorch/blob/assets/graphAnalysis.pdf" type="application/pdf" width="700px" height="700px">
-   <embed src="https://github.com/RagnaroWA/graphTorch/blob/assets/graphAnalysis.pdf">
-   <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/RagnaroWA/graphTorch/blob/assets/graphAnalysis.pdf">Download PDF</a>.</p>
-   </embed>
-</object>
-[embed]https://github.com/RagnaroWA/graphTorch/blob/assets/graphAnalysis.pdf[/embed]
+<p align="center">
+   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/hete-page.gif" width="850" height="400" />
+</p>
+<p align="center"><a href="https://github.com/RagnaroWA/graphTorch/blob/assets/graphAnalysis.pdf">Download PDF</a></p>
