@@ -3,22 +3,40 @@ const path = require('path');
 
 const app = express();
 
-// Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// An api endpoint that returns a short list of items
-app.get('/api/getList', (req,res) => {
+app.get('/api/getHomo', (req,res) => {
     const { spawn } = require('child_process');
-    const pyProg = spawn('python', ['./test.py']);
+    let filePath = req.query['filePath'];
+    let partial = req.query['partial'];
+    // console.log(req.query);
+    console.log("Start to process the homogeneous graph for " + filePath);
+    const args = [filePath, partial];
+    args.unshift('homo.py');
+    const pyProg = spawn('python', args);
+    pyProg.stdout.on('data', function(data) {
+        // console.log(data.toString());
+        var result = data.toString();
+        res.json([result]);
+        console.log(result);
+    });
+});
 
+app.get('/api/getHete', (req,res) => {
+    const { spawn } = require('child_process');
+    let filePath = req.query['filePath'];
+    let metaNum = req.query['metaNum'];
+    // console.log(req.query);
+    console.log("Start to process the heterogeneous graph for " + filePath);
+    const args = [filePath, metaNum];
+    args.unshift('hete.py');
+    const pyProg = spawn('python', args);
     pyProg.stdout.on('data', function(data) {
         console.log(data.toString());
-        var test = data.toString();
-        res.json([test]);
+        var result = data.toString();
+        res.json([result]);
+        console.log(result);
     });
-    //var list = ["item1", "item2", "item3", test];
-    //res.json(list);
-    //console.log('Sent list of items');
 });
 
 // Handles any requests that don't match the ones above

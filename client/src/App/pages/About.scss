@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 $pp: Poppins, sans-serif;
+$abel: Abel, sans-serif;
 
 html {
   margin-top: 0;
@@ -16,9 +18,24 @@ body {
 }
 
 .Home-about {
+  @media screen and (max-width: 375px) and (min-width: 350px) {
+    height: 270vh;
+  }
+  @media screen and (max-width: 480px) and (min-width: 375px) {
+    height: 250vh;
+  }
+  @media screen and (max-width: 1024px) and (min-width: 481px) {
+    height: 235vh;
+  }
+  @media screen and (max-width: 2048px) and (min-width: 1025px) {
+    height: 220vh;
+  }
+  @media screen and (max-width: 3840px) and (min-width: 2049px) {
+    height: 220vh;
+  }
+
   background-color: #fefefe;
   margin: 0;
-  height: 100vh;
   width: 100%;
   position: relative;
   overflow: scroll;
@@ -81,8 +98,87 @@ body {
       a {
         text-decoration: none;
         color: black;
-
       }
     }
+
+    #title-contact-small {
+      font: 150% $pp;
+      font-weight: 300;
+      @media screen and (max-width: 375px) and (min-width: 350px) {
+        width: 100vw;
+      }
+      @media screen and (max-width: 480px) and (min-width: 375px) {
+        width: 90vw;
+      }
+      @media screen and (max-width: 1024px) and (min-width: 481px) {
+        width: 60vw;
+      }
+      @media screen and (max-width: 2048px) and (min-width: 1025px) {
+        width: 40vw;
+      }
+      @media screen and (max-width: 3840px) and (min-width: 2049px) {
+        width: 30vw;
+      }
+      font-size: 1.2em;
+      color: black;
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+      animation: fadein 2s;
+      margin-bottom: 5px;
+    }
+
+    #file-format {
+      border-style: solid;
+      border-width: 2px;
+      @media screen and (max-width: 480px) and (min-width: 0px) {
+        width: 15vw;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 481px) {
+        width: 10vw;
+      }
+      @media screen and (max-width: 2048px) and (min-width: 1024px) {
+        width: 5vw;
+      }
+      @media screen and (max-width: 3840px) and (min-width: 2049px) {
+        width: 5vw;
+      }
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+
+      #file-format-inner {
+        font: 160% $abel;
+        font-weight: 400;
+        font-size: 1.5em;
+        color: black;
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+.footnote {
+  width: 100vw;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font: 120% $abel;
+  // transform: translateX(-25%);
+
+  .footer-font {
+    // position: absolute;
+    height: auto;
+    top: 25px;
+    transform: translateY(50%);
+    font-weight: 500;
   }
 }
