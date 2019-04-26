@@ -1,3 +1,3 @@
 # graphTorch
 
-<img src="https://www.dropbox.com/s/fnhoppbh2pxc2zc/home-page.gif" width="40" height="40" />
+<img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/home-page.gif" width="400" height="400" />
