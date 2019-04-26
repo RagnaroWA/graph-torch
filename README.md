@@ -28,3 +28,7 @@
 <p align="center">
    <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/about-page.gif" width="850" height="400" />
 </p>
+
+## PDF Analysis Report
+* The PDF analysis report can be downloaded after clicking the download button. Sample PDF is shown below.
+
