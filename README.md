@@ -32,6 +32,6 @@
 ## PDF Analysis Report
 * The PDF analysis report can be downloaded after clicking the download button. Sample PDF is shown below.
 <p align="center">
-   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/pdf-report.png" width="200" height="282.8" />
+   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/pdf-report.png" width="400" height="565.6" />
 </p>
 <p align="center"><a href="https://github.com/RagnaroWA/graphTorch/blob/assets/graphAnalysis.pdf">View the Sample PDF Analysis Report Here</a></p>
