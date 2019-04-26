@@ -12,7 +12,7 @@ app.get('/api/getHomo', (req,res) => {
     // console.log(req.query);
     console.log("Start to process the homogeneous graph for " + filePath);
     const args = [filePath, partial];
-    args.unshift('homo.py');
+    args.unshift('./python/homo.py');
     const pyProg = spawn('python', args);
     pyProg.stdout.on('data', function(data) {
         // console.log(data.toString());
@@ -29,7 +29,7 @@ app.get('/api/getHete', (req,res) => {
     // console.log(req.query);
     console.log("Start to process the heterogeneous graph for " + filePath);
     const args = [filePath, metaNum];
-    args.unshift('hete.py');
+    args.unshift('./python/hete.py');
     const pyProg = spawn('python', args);
     pyProg.stdout.on('data', function(data) {
         console.log(data.toString());
