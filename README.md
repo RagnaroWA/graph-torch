@@ -6,27 +6,27 @@
 ## Home Page
 * From the `Home` page you can direct to other pages from the nav bar.
 <p align="center">
-   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/home-page.gif" width="850" height="400" />
+   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/home-page.gif" width="840" height="400" />
 </p>
 
 ## Homogeneous Graph Page
 * The equation of those analysis is shown in `About` page.
 * You can also download your homogeneous graph analysis report.
 <p align="center">
-   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/homo-page.gif" width="850" height="400" />
+   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/homo-page.gif" width="840" height="400" />
 </p>
 
 ## Heterogeneous Graph Page
 * The equation of those analysis is shown in `About` page.
 * You can also download your heterogeneous graph analysis report.
 <p align="center">
-   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/hete-page.gif" width="850" height="400" />
+   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/hete-page.gif" width="840" height="400" />
 </p>
 
 ## About Page
 * You can view file format and used equations here.
 <p align="center">
-   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/about-page.gif" width="850" height="400" />
+   <img src="https://github.com/RagnaroWA/graphTorch/blob/assets/image/about-page.gif" width="840" height="400" />
 </p>
 
 ## PDF Analysis Report
